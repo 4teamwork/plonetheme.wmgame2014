@@ -48,14 +48,14 @@ body {
 /* @group Basics */
 
 body {
-    font: 15px Arial, FreeSans, sans-serif;
+    font: 15px 'Open Sans', Arial, FreeSans, sans-serif;
     line-height: 1.33333em;
     color: #585858;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+    font-family: 'Open Sans', Arial, FreeSans, sans-serif;
     font-weight: bold;
-    color: #073d62;
+    color: #0b1f90;
     line-height: 1.2em;
     margin-bottom: 0.5em;
     margin-top: 1em;
@@ -117,18 +117,19 @@ q {
 }
 #globalnav > li > a {
     float: left;
-    font-size: 15px;
+    font-family: 'Oswald', Arial, sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 17px;
     line-height: 16px;
     text-transform: uppercase;
     color: #fff;
-    font-weight: bold;
     text-shadow: 0 1px 1px rgba(0,0,0,0.2);
     padding: 7px 12px;
 }
 #globalnav > li > a:hover,
 #globalnav > li.active > a,
 #globalnav > li.selected > a {
-    background-color: #073d62;
+    background-color: #0b1f90;
     text-decoration: none;
 }
 
@@ -416,7 +417,7 @@ table.grid tbody:first-child tr:first-child td  {
 
 table.listing th {
     color: #fff;
-    background-color: #073d62;
+    background-color: #0b1f90;
 }
 table.vertical th {
     background-image: none;
@@ -535,7 +536,7 @@ div.listingBar a:hover {
 
 h2 a:link,
 h2 a:visited {
-    color: #073d62;
+    color: #0b1f90;
 }
 #content .documentDescription,
 #content #description {
