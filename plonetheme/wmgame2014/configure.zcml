@@ -10,7 +10,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="WM Game 2014 Theme"
+      title="plonetheme.wmgame2014"
       directory="profiles/default"
       description="Extension profile for WM Game 2014 Theme"
       provides="Products.GenericSetup.interfaces.EXTENSION"
