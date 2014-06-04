@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Apply the following rules to standard Plone pages -->
+    <rules css:if-content="#visual-portal-wrapper">
+
+        <theme href="index.html" />
+
+        <!-- Replace title with Plone's page title  -->
+        <replace css:theme="html head title" css:content="html head title" />
+
+        <!-- Drop the favicon spec coming from content; we'll use the one in the theme. -->
+        <drop content="/html/head/link[@rel='shortcut icon']" />
+
+        <!-- Copy base tag from Plone -->
+        <before css:theme-children="html head" css:content="html head base" />
+
+        <!-- Copy link, style, meta tags from Plone head -->
+        <after css:theme-children="html head"
+               content="/html/head/link | /html/head/style | /html/head/meta" />
+
+        <!-- merge classes from Plone body with theme body -->
+        <merge attributes="class" css:theme="body" css:content="body" />
+
+        <!-- Copy script tags from Plone head to end of body -->
+        <after css:theme-children="html body" css:content="html head script" />
+
+        <!-- Move inline scripts in content to end of body -->
+        <drop css:content="body script" />
+        <after css:theme-children="html body" css:content="html body script" method="raw" />
+
+        <!-- Personal tools -->
+        <replace css:content-children="#portal-personaltools" css:theme-children='#portal-personaltools' />
+
+        <!-- Global navigation -->
+        <replace css:content-children='#portal-globalnav' css:theme-children='#globalnav' />
+
+        <!-- Sidebar -->
+        <replace css:content-children='#portal-column-two' css:theme-children='#sidebar' />
+
+        <!-- Document Content -->
+        <replace css:content-children="#content" css:theme-children="#content" />
+
+        <!-- Remove sidebar, make content wider when there are no portlets -->
+        <rules if-content="not(//*[@id='portal-column-two'])">
+            <prepend css:theme="#content">
+                <xsl:attribute name="class">cell position-0 width-12</xsl:attribute>
+            </prepend>
+            <drop css:theme="#sidebar" />
+        </rules>
+
+        <!-- Edit bar -->
+        <replace css:content="#edit-bar" css:theme="#edit-bar" />
+        
+        <!-- Status messages not inside #content -->
+        <drop css:content="#content .portalMessage"/>
+        <before css:content=".portalMessage" method="raw" css:theme="#edit-bar" />
+
+    </rules>
+
+</rules>

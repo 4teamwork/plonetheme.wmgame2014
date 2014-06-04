@@ -1,0 +1,17 @@
+plonetheme.wmgame2014 Installation
+----------------------------------
+
+To install plonetheme.wmgame2014 using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``plonetheme.wmgame2014`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        plonetheme.wmgame2014
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
