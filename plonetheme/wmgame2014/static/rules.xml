@@ -51,6 +51,9 @@
         <!-- Document Content -->
         <replace css:content-children="#content" css:theme-children="#content" />
 
+        <drop css:content="#viewlet-below-content .row" />
+        <after css:content="#viewlet-below-content" css:theme-children="#content" />
+
         <!-- Remove sidebar, make content wider when there are no portlets -->
         <rules if-content="not(//*[@id='portal-column-two'])">
             <prepend css:theme="#content">

@@ -21,9 +21,9 @@
     type="theme"
     />
 
-  <!--browser:jbot
+  <browser:jbot
       directory="template_overrides"
       layer=".interfaces.ICustomTheme"
-      /-->
+      />
 
 </configure>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Register the package-specific browser layer,
+     so that it will be activated
+     when this product is installed. -->
+<layers>
+    <layer name="plonetheme.wmgame2014.customization.layer"
+      interface="plonetheme.wmgame2014.interfaces.ICustomTheme" />
+</layers>

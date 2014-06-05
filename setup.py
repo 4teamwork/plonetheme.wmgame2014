@@ -26,6 +26,7 @@ setup(name='plonetheme.wmgame2014',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'z3c.jbot',
       ],
       entry_points="""
       # -*- Entry points: -*-
