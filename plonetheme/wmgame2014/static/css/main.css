@@ -1390,8 +1390,19 @@ table.controlpanel-listing th.smallcolumn {
 .template-edit_team #columns {
     background: transparent url(../images/football_field.png) no-repeat center 110px;
 }
-.template-edit_team #plone-document-byline {
+.template-edit_team #plone-document-byline,
+.template-team_overview #plone-document-byline,
+.template-player_view #plone-document-byline,
+.template-nations  #plone-document-byline,
+.template-nation  #plone-document-byline,
+.template-schedule #plone-document-byline,
+.template-summary_view #plone-document-byline,
+.template-leagues #plone-document-byline {
     display: none;
+}
+
+.tabbedview-tab-menu {
+    display: none !important;
 }
 #starters,
 #substitutes {
@@ -1462,6 +1473,11 @@ table.controlpanel-listing th.smallcolumn {
 }
 .ranking {
     padding-top: 0.5em;
+}
+
+.teamOverviewCoach {
+    padding-bottom: 1em;
+    font-weight: bold;
 }
 /* @end */
 
