@@ -361,7 +361,9 @@ table.grid td,
 table.plain th,
 table.plain td,
 table.invisible th,
-table.invisible td {
+table.invisible td,
+table.vertical th,
+table.vertical td  {
     padding: 0.25em 0.75em;
     text-align: left;
     vertical-align: top;
@@ -421,13 +423,18 @@ table.listing th {
 }
 table.vertical th {
     background-image: none;
-    text-align: right;
+    background-color: transparent;
+    color: #585858;
+    text-align: left;
 }
 table.listing tbody tr:nth-child(odd) td,
 table.listing tbody tr.odd td {
     background-color: rgba(255, 255, 255, 0.6);
 }
-
+table.vertical tbody tr:nth-child(odd) td,
+table.vertical tbody tr.odd td {
+    background-color: transparent;
+}
 .dragindicator {
     outline: 2px solid #FFD700;
 }
@@ -1392,7 +1399,7 @@ table.controlpanel-listing th.smallcolumn {
 }
 .template-edit_team #plone-document-byline,
 .template-team_overview #plone-document-byline,
-.template-player_view #plone-document-byline,
+.template-player #plone-document-byline,
 .template-nations  #plone-document-byline,
 .template-nation  #plone-document-byline,
 .template-schedule #plone-document-byline,
@@ -1478,6 +1485,13 @@ table.controlpanel-listing th.smallcolumn {
 .teamOverviewCoach {
     padding-bottom: 1em;
     font-weight: bold;
+}
+.playerPortrait {
+    float: left;
+    padding-right: 2em;
+}
+table.playerData {
+    width: auto;
 }
 /* @end */
 
