@@ -1,15 +1,15 @@
 /* @group Main layout */
 
 body {
-    background: #0a880a url(../images/background.png) repeat-y center top;   
+    background: #083c78 url(../images/background.png) repeat-y center top;   
 }
 #container-wrapper {
     min-width: 956px;
     min-height: 1100px;
-    background: transparent url(../images/logo_wc2014.png) no-repeat center 250px;
+    // background: transparent url(../images/logo_wc2014.png) no-repeat center 250px;
 }
 #header-wrapper {
-    background-color: #0a880a;
+    background-color: #0f5298;
     border-bottom: 10px solid #fff;
     margin-bottom: 40px;
 }
@@ -27,8 +27,8 @@ body {
     height: 150px;
 }
 #main {
-    background: rgba(255, 255, 255, 0.9) url(../images/logo_wc2014.png) no-repeat center 50px;
-    /*background: rgba(255, 255, 255, 0.9);*/
+    // background: rgba(255, 255, 255, 0.9) url(../images/logo_wc2014.png) no-repeat center 50px;
+    background: rgba(255, 255, 255, 0.9);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -55,7 +55,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', Arial, FreeSans, sans-serif;
     font-weight: bold;
-    color: #0b1f90;
+    color: #083c78;
     line-height: 1.2em;
     margin-bottom: 0.5em;
     margin-top: 1em;
@@ -109,7 +109,7 @@ q {
 
 #globalnav {
     height: 30px;
-    background-color: #0a880a;
+    background-color: #1a1a1a;
 }
 #globalnav > li {
     float: left;
@@ -129,7 +129,7 @@ q {
 #globalnav > li > a:hover,
 #globalnav > li.active > a,
 #globalnav > li.selected > a {
-    background-color: #0b1f90;
+    background-color: #083c78;
     text-decoration: none;
 }
 
@@ -177,7 +177,7 @@ q {
     padding: 0 0.75em;
 }
 #portal-personaltools dd a:hover {
-    background: #62704b;
+    background: #aaa;
     color: White;
 }
 
@@ -186,8 +186,8 @@ q {
 /* @group Content pulldowns (edit-bar) */
 
 #edit-bar {
-    background-color: #62704b;
-    border: 1px solid #62704b;
+    background-color: #aaa;
+    border: 1px solid #aaa;
     min-height: 2em;
     margin-bottom: 0.5em;
     padding-top: 0.05em;
@@ -251,7 +251,7 @@ q {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 #contentActionMenus dl.actionMenu.activated dd {
-    background-color: #62704b;
+    background-color: #aaa;
     color: White;
     z-index: 5;
 }
@@ -277,7 +277,7 @@ q {
 
 #contentActionMenus {
     float: right;
-    background-color: #62704b;
+    background-color: #aaa;
     margin: 0;
     position: relative;
     border-radius: 0 0 5px 5px;
@@ -419,7 +419,7 @@ table.grid tbody:first-child tr:first-child td  {
 
 table.listing th {
     color: #fff;
-    background-color: #0b1f90;
+    background-color: #083c78;
 }
 table.vertical th {
     background-image: none;
@@ -543,7 +543,7 @@ div.listingBar a:hover {
 
 h2 a:link,
 h2 a:visited {
-    color: #0b1f90;
+    color: #083c78;
 }
 #content .documentDescription,
 #content #description {
@@ -1020,7 +1020,7 @@ button[disabled] {
     box-shadow: none;
 }
 /*input.context {
-    background-color: #62704b;
+    background-color: #aaa;
     background-image: -moz-linear-gradient(top, #788462, #626c50);
     background-image: -ms-linear-gradient(top, #788462, #626c50);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#788462), to(#626c50));
@@ -1151,7 +1151,7 @@ div.overlay div.close {
 
 .pb-ajax, .pb-image {
     background-color: #fff;
-    border: 3px solid #0a880a;
+    border: 3px solid #083c78;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
