@@ -1493,6 +1493,10 @@ table.controlpanel-listing th.smallcolumn {
 table.playerData {
     width: auto;
 }
+
+.coachInfo {
+    margin-bottom: 1em;
+}
 /* @end */
 
 
