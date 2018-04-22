@@ -1,15 +1,17 @@
 /* @group Main layout */
 
 body {
-    background: #083c78 url(../images/background.png) repeat-y center top;   
+    background: #821005 url(../images/background.png) repeat-y center top;   
+    /*background: linear-gradient(to right, #821005 , #c50c0f, #821005);*/
 }
 #container-wrapper {
     min-width: 956px;
-    min-height: 1100px;
-    // background: transparent url(../images/logo_wc2014.png) no-repeat center 250px;
+    min-height: 1260px;
+    background: transparent url(../images/logo_wc2018.png) no-repeat center 250px;
+    background-size: 500px 1000px;
 }
 #header-wrapper {
-    background-color: #0f5298;
+    background: transparent url(../images/banner.png) no-repeat center center;
     border-bottom: 10px solid #fff;
     margin-bottom: 40px;
 }
@@ -23,12 +25,12 @@ body {
     padding-bottom: 20px;
 }
 #banner {
-    background: transparent url(../images/banner.png) no-repeat center center;
     height: 150px;
 }
 #main {
-    // background: rgba(255, 255, 255, 0.9) url(../images/logo_wc2014.png) no-repeat center 50px;
+    background: rgba(255, 255, 255, 0.9) url(../images/logo_wc2018.png) no-repeat center 50px;
     background: rgba(255, 255, 255, 0.9);
+    background-size: 500px 1000px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -55,7 +57,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', Arial, FreeSans, sans-serif;
     font-weight: bold;
-    color: #083c78;
+    color: #821005;
     line-height: 1.2em;
     margin-bottom: 0.5em;
     margin-top: 1em;
@@ -83,7 +85,7 @@ h2 a, h3 a, h4 a {
 }
 
 a:link, a:visited {
-    color: #205c90;
+    color: #821005;
 }
 a:focus img {
     outline: thin dotted;
@@ -109,7 +111,7 @@ q {
 
 #globalnav {
     height: 30px;
-    background-color: #1a1a1a;
+    background-color: #cd9949;
 }
 #globalnav > li {
     float: left;
@@ -129,7 +131,7 @@ q {
 #globalnav > li > a:hover,
 #globalnav > li.active > a,
 #globalnav > li.selected > a {
-    background-color: #083c78;
+    background-color: #821005;
     text-decoration: none;
 }
 
@@ -419,7 +421,7 @@ table.grid tbody:first-child tr:first-child td  {
 
 table.listing th {
     color: #fff;
-    background-color: #083c78;
+    background-color: #821005;
 }
 table.vertical th {
     background-image: none;
@@ -543,7 +545,7 @@ div.listingBar a:hover {
 
 h2 a:link,
 h2 a:visited {
-    color: #083c78;
+    color: #821005;
 }
 #content .documentDescription,
 #content #description {
@@ -1151,7 +1153,7 @@ div.overlay div.close {
 
 .pb-ajax, .pb-image {
     background-color: #fff;
-    border: 3px solid #083c78;
+    border: 3px solid #821005;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
