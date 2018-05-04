@@ -24,7 +24,7 @@
 
         <!-- Add webfonts -->
         <after theme-children="/html/head">
-            <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,700&amp;subset=latin,latin-ext'
+            <link href='https://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,700&amp;subset=latin,latin-ext'
                   rel='stylesheet'
                   type='text/css' />
         </after>
